@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Magic Items</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Magic Items Collection</h1>
+            <div class="filters">
+                <input type="text" id="searchInput" placeholder="Search magic items...">
+                <select id="rarityFilter">
+                    <option value="">All Rarities</option>
+                    <option value="Common">Common</option>
+                    <option value="Uncommon">Uncommon</option>
+                </select>
+                <select id="categoryFilter">
+                    <option value="">All Categories</option>
+                    <option value="wondrous-items">Wondrous Items</option>
+                    <option value="weapon">Weapons</option>
+                    <option value="wand">Wands</option>
+                    <option value="armor">Armor</option>
+                    <option value="ring">Rings</option>
+                    <option value="potion">Potions</option>
+                    <option value="scroll">Scrolls</option>
+                </select>
+            </div>
+        </header>
+
+        <div id="itemsContainer" class="items-grid">
+            <!-- Magic item cards will be populated here -->
+        </div>
+
+        <div id="noResults" class="no-results" style="display: none;">
+            <p>No magic items found matching your criteria.</p>
+        </div>
+    </div>
+
+    <script src="data/translatedMagicItems_Common_Uncommon.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
